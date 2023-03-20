@@ -23,17 +23,12 @@ const nextConfig = {
           './PricingPage': './pages/index.js',
         },
         shared: {
-          '@emotion/react': {
+          '@emotion/': {
             eager: true,
             requiredVersion: false,
             singleton: true,
           },
-          '@emotion/styled': {
-            eager: true,
-            requiredVersion: false,
-            singleton: true,
-          },
-          '@chakra-ui/react': {
+          '@chakra-ui/': {
             eager: true,
             requiredVersion: false,
             singleton: true,
