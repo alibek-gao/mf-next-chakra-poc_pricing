@@ -34,7 +34,7 @@ export default function ThreeTierPricing({ test }) {
         </Heading>
         <Text fontSize="lg" color={'gray.500'}>
           Start with 14-day free trial. No credit card needed. Cancel at
-          anytime. {JSON.stringify({ test: typeof test, value: test })}
+          anytime.
         </Text>
       </VStack>
       <Stack

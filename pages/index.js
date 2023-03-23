@@ -18,7 +18,7 @@ export function Pricing({ test }) {
 }
 
 export async function getServerSideProps({ query }) {
-  const test = Date.now() % 1000
+  const test = Date.now() % 500
   return {
     props: {
       test,
