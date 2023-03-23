@@ -7,8 +7,9 @@ import {
   VStack,
   List,
   ListItem,
-  Button,
-} from '@chakra-ui/react';
+  Button, Icon,
+} from '@chakra-ui/react'
+import { CheckIcon } from '@chakra-ui/icons'
 
 function PriceWrapper({ children }) {
   return (
@@ -24,7 +25,7 @@ function PriceWrapper({ children }) {
   );
 }
 
-export default function ThreeTierPricing() {
+export default function ThreeTierPricing({ test }) {
   return (
     <Box py={12}>
       <VStack spacing={2} textAlign="center">
@@ -33,7 +34,7 @@ export default function ThreeTierPricing() {
         </Heading>
         <Text fontSize="lg" color={'gray.500'}>
           Start with 14-day free trial. No credit card needed. Cancel at
-          anytime.
+          anytime. {JSON.stringify({ test: typeof test, value: test })}
         </Text>
       </VStack>
       <Stack
@@ -65,15 +66,15 @@ export default function ThreeTierPricing() {
             borderBottomRadius={'xl'}>
             <List spacing={3} textAlign="start" px={12}>
               <ListItem>
-
+                <Icon as={CheckIcon} />
                 unlimited build minutes
               </ListItem>
               <ListItem>
-
+                <Icon as={CheckIcon} />
                 Lorem, ipsum dolor.
               </ListItem>
               <ListItem>
-
+                <Icon as={CheckIcon} />
                 5TB Lorem, ipsum dolor.
               </ListItem>
             </List>
@@ -126,23 +127,23 @@ export default function ThreeTierPricing() {
               borderBottomRadius={'xl'}>
               <List spacing={3} textAlign="start" px={12}>
                 <ListItem>
-
+                  <Icon as={CheckIcon} />
                   unlimited build minutes
                 </ListItem>
                 <ListItem>
-
+                  <Icon as={CheckIcon} />
                   Lorem, ipsum dolor.
                 </ListItem>
                 <ListItem>
-
+                  <Icon as={CheckIcon} />
                   5TB Lorem, ipsum dolor.
                 </ListItem>
                 <ListItem>
-
+                  <Icon as={CheckIcon} />
                   5TB Lorem, ipsum dolor.
                 </ListItem>
                 <ListItem>
-
+                  <Icon as={CheckIcon} />
                   5TB Lorem, ipsum dolor.
                 </ListItem>
               </List>
@@ -177,15 +178,15 @@ export default function ThreeTierPricing() {
             borderBottomRadius={'xl'}>
             <List spacing={3} textAlign="start" px={12}>
               <ListItem>
-
+                <Icon as={CheckIcon} />
                 unlimited build minutes
               </ListItem>
               <ListItem>
-
+                <Icon as={CheckIcon} />
                 Lorem, ipsum dolor.
               </ListItem>
               <ListItem>
-
+                <Icon as={CheckIcon} />
                 5TB Lorem, ipsum dolor.
               </ListItem>
             </List>

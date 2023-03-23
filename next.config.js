@@ -16,11 +16,12 @@ const nextConfig = {
       new NextFederationPlugin({
         name: 'pricing',
         filename: 'static/chunks/remoteEntry.js',
-        extraOptions: {
-          automaticAsyncBoundary: true,
-        },
+        // extraOptions: {
+        //   automaticAsyncBoundary: true,
+        // },
         exposes: {
-          './PricingPage': './pages/index.js',
+          './Pricing': './pages/index.js',
+          './List': './pages/list.js',
         },
         shared: {
           '@emotion/': {
