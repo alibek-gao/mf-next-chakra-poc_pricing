@@ -18,7 +18,7 @@ export function Pricing({ test }) {
 }
 
 export async function getServerSideProps({ query }) {
-  const test = 'process.env.TEST_ENV_SHARING'
+  const test = Date.now() % 1000
   return {
     props: {
       test,

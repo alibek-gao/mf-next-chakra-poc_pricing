@@ -24,11 +24,11 @@ export default function GridListWithHeading({ test }) {
   return (
     <Box p={4}>
       <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
-        <Heading fontSize={'3xl'}>This is the headline</Heading>
+        <Heading fontSize={'3xl'}>This is the headline only for {test}$</Heading>
         <Text color={'gray.600'} fontSize={'xl'}>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. {JSON.stringify({ test: typeof test, value: test })}
+          sed diam voluptua.
         </Text>
       </Stack>
 
