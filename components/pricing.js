@@ -53,7 +53,7 @@ export default function ThreeTierPricing({ test }) {
                 $
               </Text>
               <Text fontSize="5xl" fontWeight="900">
-                79
+                {test * 0.7}
               </Text>
               <Text fontSize="3xl" color="gray.500">
                 /month
@@ -165,7 +165,7 @@ export default function ThreeTierPricing({ test }) {
                 $
               </Text>
               <Text fontSize="5xl" fontWeight="900">
-                349
+                {test * 1.3}
               </Text>
               <Text fontSize="3xl" color="gray.500">
                 /month
