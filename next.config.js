@@ -22,6 +22,7 @@ const nextConfig = {
         exposes: {
           './Pricing': './pages/index.js',
           './List': './pages/list.js',
+          './Hero': './pages/hero.js',
         },
         shared: {
           '@emotion/': {
