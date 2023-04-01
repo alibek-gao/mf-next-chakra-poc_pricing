@@ -1,5 +1,15 @@
 const { NextFederationPlugin } = require('@module-federation/nextjs-mf');
 
+const SHOP_APP_URL =
+  process.env.NEXT_PUBLIC_SHOP_APP_URL || 'http://localhost:3002';
+
+const remotes = (isServer) => {
+  const location = isServer ? 'ssr' : 'chunks';
+  return {
+    shop: `shop@${SHOP_APP_URL}/_next/static/${location}/remoteEntry.js`,
+  };
+}
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -16,6 +26,7 @@ const nextConfig = {
       new NextFederationPlugin({
         name: 'pricing',
         filename: 'static/chunks/remoteEntry.js',
+        remotes: remotes(isServer),
         // extraOptions: {
         //   automaticAsyncBoundary: true,
         // },

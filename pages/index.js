@@ -1,5 +1,13 @@
 import Head from 'next/head'
+import dynamic from 'next/dynamic';
 import ThreeTierPricing from '@/components/pricing'
+
+const Search = dynamic(
+  () => import('shop/Search').then((mod) => mod.Search),
+  {
+    ssr: true,
+  }
+);
 
 export function Pricing({ test }) {
   return (
@@ -12,6 +20,7 @@ export function Pricing({ test }) {
       </Head>
       <main>
         <ThreeTierPricing test={test}/>
+        <Search />
       </main>
     </>
   )
