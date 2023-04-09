@@ -66,7 +66,7 @@ export default function Hero({test}) {
               _hover={{
                 bg: 'green.500',
               }}>
-              Features
+              Test button
             </Button>
           </Link>
           <Link href='/pricing'>
