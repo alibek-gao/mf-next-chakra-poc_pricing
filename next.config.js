@@ -24,7 +24,7 @@ const nextConfig = {
   webpack(config, { isServer }) {
     config.plugins.push(
       new NextFederationPlugin({
-        name: 'pricing',
+        name: 'content',
         filename: 'static/chunks/remoteEntry.js',
         remotes: remotes(isServer),
         // extraOptions: {

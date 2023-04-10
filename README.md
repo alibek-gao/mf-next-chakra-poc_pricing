@@ -5,7 +5,7 @@ This is POC for Module Federation with Next.js and Chakra UI.
 It contains two Next.js 13 apps:
 
 * `layout` - port 3000, [another repository](https://github.com/alibek-gao/mf-next-chakra-poc_layout)
-* `pricing` - port 3001, this repository
+* `content` - port 3001, this repository
 * `shop` - port 3002, [another repository](https://github.com/alibek-gao/mf-next-chakra-poc_shop)
 
 Both apps bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
